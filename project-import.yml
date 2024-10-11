@@ -20,7 +20,7 @@ services:
         initCommands:
           - mv q3server.cfg serverfiles/baseq3/q3server.cfg
           - ./q3server start
-        start: zsc noop -s
+        start: tail -f log/console/q3server-console.log
         ports:
           - port: 27960
             protocol: udp
