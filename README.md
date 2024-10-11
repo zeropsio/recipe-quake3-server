@@ -18,12 +18,17 @@ You need to enable IPv4 connectivity, follow these extra steps in GUI:
     - Services > `q3server` > Public access & internal ports > Public Access through IP Addresses > Setup up the first
       access through IPv4
 
-You can change server hostname and motd by changing following environment variables in `zerops-import.yml` or `zerops.yml`.
+You can change server some of the server configuration parameters by changing following environment variables in `zerops-import.yml` or `zerops.yml`.
 
-| key           | default                                   | description         |
-|---------------|-------------------------------------------|---------------------|
-| `SV_HOSTNAME` | Quake 3: Arena server hosted on zerops.io | Server hostname.    |
-| `MOTD`        | Welcome to zerops.io Quake 3: Arena       | Message of the day. |
+| key           | type          | default                                   | description                                                        |
+|---------------|---------------|-------------------------------------------|--------------------------------------------------------------------|
+| `SV_HOSTNAME` | string        | Quake 3: Arena server hosted on zerops.io | Server hostname.                                                   |
+| `MOTD`        | string        | Welcome to zerops.io Quake 3: Arena       | Message of the day.                                                |
+| `ENABLE_BOTS` | bool (1 or 0) | 1                                         | Enables bots on the server.                                        |
+| `MIN_PLAYERS` | int           | 8                                         | Minimum players on server, remaining spots will be filled by bots. |
+| `MAX_PLAYERS` | int           | 16                                        | Maximum players on server.                                         |
+| `TIME_LIMT`   | int           | 10                                        | Maximum round time.                                                |
+| `FRAG_LIMIT`  | int           | 30                                        | Target frag count, after which is change of round.                 |
 
 <br/>
 

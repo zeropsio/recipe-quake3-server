@@ -29,5 +29,10 @@ services:
           target: q3server.cfg
           delimiter: '%'
         envVariables:
-          SV_HOSNTAME: "Quake 3: Arena server hosted on zerops.io"
+          SV_HOSTNAME: "Quake 3: Arena server hosted on zerops.io"
           MOTD: "Welcome to zerops.io Quake 3: Arena"
+          ENABLE_BOTS: 1
+          MIN_PLAYERS: 8
+          MAX_PLAYERS: 16
+          TIME_LIMIT: 10
+          FRAG_LIMIT: 30
