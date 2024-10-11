@@ -3,6 +3,8 @@
 Do you know feeling of nostalgia, when you want to play some old first-person shooters, but don't want to spend time configuring the server?
 Well here's your solution, quick and easy way to start you own Quake 3: Arena server and play with your friends.
 
+![quake](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-quake.svg)
+
 [LinuxGSM](https://linuxgsm.com/) used to deploy this game server. For more advanced configuration look [here](https://linuxgsm.com/servers/q3server/).
 
 <br/>
