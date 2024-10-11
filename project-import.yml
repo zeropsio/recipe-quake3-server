@@ -3,7 +3,7 @@ project:
 services:
   - hostname: q3server
     type: ubuntu@22.04
-    buildFromGit:
+    buildFromGit: https://github.com/zeropsio/recipe-quake3-server@main
     zeropsSetup:
       build:
         deployFiles:
