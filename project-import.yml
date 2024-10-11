@@ -1,0 +1,33 @@
+project:
+  name: quake3-server
+services:
+  - hostname: q3server
+    type: ubuntu@22.04
+    buildFromGit:
+    zeropsSetup:
+      build:
+        deployFiles:
+          - q3server.cfg
+      run:
+        os: ubuntu
+        base: ubuntu@22.04
+        prepareCommands:
+          - sudo dpkg --add-architecture i386
+          - sudo apt-get update
+          - sudo apt-get install -y jq
+          - cd /var/www && curl -Lo linuxgsm.sh https://linuxgsm.sh && chmod +x linuxgsm.sh && sudo -u zerops -n bash linuxgsm.sh q3server
+          - cd /var/www && sudo -u zerops -n ./q3server auto-install
+        initCommands:
+          - mv q3server.cfg serverfiles/baseq3/q3server.cfg
+          - ./q3server start
+        start: zsc noop -s
+        ports:
+          - port: 27960
+            protocol: udp
+            description: "game & query port"
+        envReplace:
+          target: q3server.cfg
+          delimiter: '%'
+        envVariables:
+          SV_HOSNTAME: "Quake 3: Arena server hosted on zerops.io"
+          MOTD: "Welcome to zerops.io Quake 3: Arena"
