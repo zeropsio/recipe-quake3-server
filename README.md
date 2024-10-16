@@ -1,7 +1,7 @@
 # Zerops x Quake 3
 
-Do you know feeling of nostalgia, when you want to play some old first-person shooters, but don't want to spend time configuring the server?
-Well here's your solution, quick and easy way to start you own Quake 3: Arena server and play with your friends.
+Do you ever feel a wave of nostalgia, yearning to play classic first-person shooters like **Quake 3: Arena**, but dread the thought of spending hours configuring a server? We've got the perfect solution for you! Here's a quick and easy way to start your own Quake 3: Arena server and dive into nostalgic gameplay with your friends in no time.
+
 
 ![quake](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-quake.svg)
 
