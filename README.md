@@ -5,15 +5,22 @@ Do you ever feel a wave of nostalgia, yearning to play classic first-person shoo
 
 ![quake](https://github.com/zeropsio/recipe-shared-assets/blob/main/covers/svg/cover-quake.svg)
 
-[LinuxGSM](https://linuxgsm.com/) used to deploy this game server. For more advanced configuration look [here](https://linuxgsm.com/servers/q3server/).
+
+## Using LinuxGSM
+
+We'll be using [LinuxGSM](https://linuxgsm.com/) to deploy this game server. LinuxGSM (Linux Game Server Managers) is a command-line tool for deploying and managing dedicated game servers on Linux.
+
+For more advanced configuration options, you can refer to the [official LinuxGSM Quake 3: Arena server documentation](https://linuxgsm.com/servers/q3server/).
 
 <br/>
 
 ## Deploy on Zerops
 
-<br/>
+To deploy your Quake 3: Arena server on Zerops, follow these steps:
 
-You need to enable IPv4 connectivity, follow these extra steps in GUI:
+1. Set up your Zerops account and project (if you haven't already).
+2. Create a new service for your (e.g. ```quake3-server```)
+3. To ensure your server functions correctly, you need to enable IPv4 connectivity. Follow these extra steps in the Zerops GUI:
 
 - Projects > `quake3-server`
     - IP Addresses & Public Routing Overview > (Activate) Unique IPv4 address
